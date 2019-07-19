@@ -136,8 +136,11 @@ input, button {
 }
 
 #rootBooking .BookingForm{
-  position: absolute;
+  /* position: absolute;
   left: 40px;
-  top: 24px;
-  z-index: 3;
+  top: 24px; */
+}
+
+.style__galleryImage___6P_QQ {
+  border: none;
 }
