@@ -1,6 +1,142 @@
-#rootReview {
+/* #rootReview {
   width: 594px;
   max-width: 648px;
   margin-left: 24px;
   margin-right: 24px;
+} */
+
+.body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #484848;
+}
+
+input, button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  box-sizing: content-box;
+}
+
+.containerNav {
+  height: 51px;
+  padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+}
+
+.containerLogo {
+  height: 48px;
+  width: 40px;
+  margin: 10px 20px 0 5px;
+  background-image: url(./bedroost-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.containerSearchBox {
+  width: 900px;
+  display: flex;
+}
+
+.containerSearch {
+  border: 1px solid #EBEBEB;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 28px;
+  padding: 10px 0;
+  padding-left: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.containerSearch:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(26, 26, 29, 0.08);
+}
+
+.containerSearchInput:focus {
+  width: 600px;
+}
+
+.containerSearchInput {
+  transition: width 0.25s ease-in;
+  /* transition: color 0.25s ease 0s; */
+  height: 22px;
+  width: 410px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.searchIcon {
+  padding: 5px;
+  padding-right: 15px;
+}
+
+.containerHeader {
+  font-weight: 600;
+  font-size: 14px;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+.containerHeaderLink {
+  padding: 8px 16px;
+}
+
+#rootGallery {
+  /* border: 1px solid black; */
+}
+
+#description .main {
+  margin: 0;
+}
+
+#description {
+  max-width: 800px;
+}
+
+#description .summary {
+  height: 140px;
+}
+
+.containerBody {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.containerReview {
+  max-width: 1180px;
+}
+
+.containerBooking {
+  padding-left: 8px;
+  position: relative;
+  min-height: 1px;
+}
+
+#rootBooking{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; 
+}
+
+#rootBooking .BookingForm{
+  position: absolute;
+  left: 40px;
+  top: 24px;
+  z-index: 3;
 }

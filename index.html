@@ -3,13 +3,51 @@
 <html>
   <head>
     <title>Booking Proxy</title>
+    <link href="./styles.css" rel="stylesheet">
   </head>
   <body>
-    <div id="rootBooking"></div>
-    <div id="rootGallery"></div>
-    <div id="rootReview"></div>
-    <script src="https://bedroost-booking-static.s3-us-west-1.amazonaws.com/main.js"></script>
-    <!-- <script src="https://bedroost-gallery-static.s3-us-west-1.amazonaws.com/bundle.js"></script> -->
-    <script src="https://bedroost-review-static.s3-us-west-1.amazonaws.com/bundle.js"></script>
+    <div class="containerApp">
+      <div class="containerHead">
+          <div class="containerNav">
+            <div class="containerLogo"></div>
+            <div class="containerSearchBox">
+              <div class="containerSearch">
+                <div class="searchIcon">
+                  <svg viewBox="0 0 16 16" role="presentation" aria-hidden="true" focusable="false" style="height:18px;width:18px;display:block;fill:currentColor"><path d="m2.5 7c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5m13.1 6.9-2.8-2.9c.7-1.1 1.2-2.5 1.2-4 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.5 0 2.9-.5 4-1.2l2.9 2.8c.2.3.5.4.9.4.3 0 .6-.1.8-.4.5-.5.5-1.2 0-1.7"></path></svg>
+                </div>
+                <input class="containerSearchInput" name="containerSearchInput" placeholder="Search"></input>
+              </div>
+            </div>
+            <div class="containerHeader">
+              <div class="containerHeaderLink">Become a host</div>
+              <div class="containerHeaderLink">Help</div>
+              <div class="containerHeaderLink">Sign up</div>
+              <div class="containerHeaderLink">Log up</div>
+            </div>
+          </div>
+      </div>
+      
+      <div id="rootGallery"></div>
+      <div class="containerBody">
+        <div id="description"></div>
+        <div class="containerBooking">
+          <div id="rootBooking"></div>
+        </div>
+        <div class="containerReview">
+          <div id="rootReview"></div>
+        </div>
+      </div>
+    </div>
+    <!-- booking -->
+      <script src="http://13.52.61.34/rooms/:listingid/dist/main.js"></script>
+      <!-- <script src="http://localhost:3001/rooms/:listingid/dist/main.js"></script> -->
+    <!-- gallery -->
+      <script src="http://54.215.150.88/rooms/:listingid/dist/bundle.js"></script>
+      <!-- <script src="http://localhost:3003/rooms/:listingid/dist/bundle.js"></script> -->
+    <!-- review -->
+      <script src="http://13.57.195.146/rooms/:listingid/bundle.js"></script>
+      <!-- <script src="http://localhost:3004/rooms/:listingid/bundle.js"></script> -->
+    <!-- desc -->
+      <script src="http://18.221.218.103/:listingid/bundle.js"></script>
   </body>
 </html>
