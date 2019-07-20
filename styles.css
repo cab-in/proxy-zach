@@ -141,6 +141,28 @@ input, button {
   top: 24px; */
 }
 
-.style__galleryImage___6P_QQ {
-  border: none;
+/* gallery css */
+
+.style__galleryContainer2___1lOrF img {
+  border: none !important;
+}
+
+.style__galleryBody___3ceNy {
+  border-top: 1px solid #484848;
+}
+
+.style__galleryContainer3___26UHC {
+  border-left: 1px solid #484848;
+}
+
+#style__galleryBigImage___HTRYl {
+  border: 1px solid #484848;
+}
+
+#style__galleryImage___6P_QQ0, #style__galleryImage___6P_QQ1 {
+  border: 1px solid #484848;
+}
+
+#style__galleryImage___6P_QQ1 {
+  border-bottom: 2px solid #484848;
 }
