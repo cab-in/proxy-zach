@@ -105,9 +105,19 @@ input, button {
   #style__galleryBigImage___HTRYl, .style__galleryContainer1___25jQ9 {
     height: 280px !important;
   }
+
+  #style__carouselMainBelow___vpsrH {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .style__carouselImageList___3RcfQ div {
+    height: 80px !important;
+  }
   
   #description {
-    visibility: hidden;
+    height: 0 !important;
+    visibility: hidden !important;
   }
 
   #style__togglePhoto___1sKHI {
