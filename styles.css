@@ -44,7 +44,7 @@ input, button {
 }
 
 .containerSearchBox {
-  width: 900px;
+  /* width: 900px; */
   display: flex;
 }
 
@@ -64,15 +64,11 @@ input, button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(26, 26, 29, 0.08);
 }
 
-.containerSearchInput:focus {
-  width: 600px;
-}
-
 .containerSearchInput {
   transition: width 0.25s ease-in;
   /* transition: color 0.25s ease 0s; */
   height: 22px;
-  width: 410px;
+  width: 220px;
   font-weight: 700;
   font-size: 17px;
 }
@@ -83,6 +79,7 @@ input, button {
 }
 
 .containerHeader {
+  visibility: hidden;
   font-weight: 600;
   font-size: 14px;
   width: 400px;
@@ -92,8 +89,43 @@ input, button {
   align-self: flex-end;
 }
 
-.containerHeaderLink {
-  padding: 8px 16px;
+.style__carouselContainer___j8Voe svg {
+  visibility: hidden;
+}
+
+.containerHeader {
+  visibility: show;
+}
+
+.style__carouselContainer___j8Voe {
+  display: block !important;
+}
+
+@media screen and (min-width: 768px) {
+  .style__carouselContainer___j8Vo {
+    display: flex;
+  }
+  
+  .style__carouselContainer___j8Voe svg {
+    visibility: show;
+  }
+
+  .containerHeader {
+    visibility: show;
+  }
+
+  .containerSearchBox {
+    width: 900px;
+    display: flex;
+  }
+
+  .containerSearchInput {
+    width: 410px;
+  }
+
+  .containerSearchInput:focus {
+    width: 600px;
+  }
 }
 
 #rootGallery {
@@ -110,6 +142,13 @@ input, button {
 
 #description .summary {
   height: 140px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  #description .summary {
+    padding: 0;
+  }
 }
 
 .containerBody {
@@ -124,15 +163,22 @@ input, button {
 }
 
 .containerBooking {
-  padding-left: 8px;
+  width: 0;
   position: relative;
   min-height: 1px;
+}
+
+@media (min-width: 768px) {
+  .containerBooking {
+    padding-left: 8px;
+  }
 }
 
 #rootBooking{
   position: -webkit-sticky;
   position: sticky;
   top: 0; 
+  width: 0;
 }
 
 #rootBooking .BookingForm{
