@@ -44,6 +44,10 @@ app.get('/listing/desc/:listingid', (req, res) => {
   });
 });
 
+app.get('/rooms/:listingid/:item.png', (req, res) => {
+  res.redirect(`https://bedroost-booking-static.s3-us-west-1.amazonaws.com/images/${req.params.item}.png`)
+});
+
 app.listen(port, () => {
   console.log(`listening on ${port}`)
 });

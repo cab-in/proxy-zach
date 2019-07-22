@@ -1,5 +1,5 @@
-var AWS = require('aws-sdk');
-var credentials = new AWS.SharedIniFileCredentials({profile: 'default'});
+const AWS = require('aws-sdk');
+const credentials = new AWS.SharedIniFileCredentials({profile: 'default'});
 AWS.config.credentials = credentials;
 
 // Set the region 
@@ -9,17 +9,17 @@ AWS.config.update({region: 'us-west-1'});
 s3 = new AWS.S3();
 
 // call S3 to retrieve upload file to specified bucket
-var uploadParams = {Bucket: process.argv[2], Key: '', Body: ''};
-var file = process.argv[3];
+const uploadParams = {Bucket: process.argv[2], Key: '', Body: ''};
+const file = process.argv[3];
 
 // Configure the file stream and obtain the upload parameters
-var fs = require('fs');
-var fileStream = fs.createReadStream(file);
+const fs = require('fs');
+const fileStream = fs.createReadStream(file);
 fileStream.on('error', function(err) {
   console.log('File Error', err);
 });
 uploadParams.Body = fileStream;
-var path = require('path');
+const path = require('path');
 uploadParams.Key = path.basename(file);
 
 // call S3 to retrieve upload file to specified bucket
