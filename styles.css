@@ -44,7 +44,6 @@ input, button {
 }
 
 .containerSearchBox {
-  /* width: 900px; */
   display: flex;
 }
 
@@ -97,15 +96,32 @@ input, button {
   visibility: show;
 }
 
-.style__carouselContainer___j8Voe {
-  display: block !important;
-}
-
-@media screen and (min-width: 768px) {
-  .style__carouselContainer___j8Vo {
-    display: flex;
+@media (max-width: 768px) {
+  .style__galleryCarouselBody___MjjU1 {
+    height: auto !important;
   }
   
+  .style__carouselContainer___j8Voe {
+    display: block !important;
+  }
+
+  .style__carouselMainImage___QX1b_ {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerSearchBox {
+    width: 500px;
+  }
+
+  .containerSearchInput {
+    width: 410px;
+  }
+
+}
+
+@media (min-width: 1080px) {
   .style__carouselContainer___j8Voe svg {
     visibility: show;
   }
@@ -126,10 +142,6 @@ input, button {
   .containerSearchInput:focus {
     width: 600px;
   }
-}
-
-#rootGallery {
-  /* border: 1px solid black; */
 }
 
 #description .main {
