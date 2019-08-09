@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Proxy for the booking component",
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "node server/index.js",
+    "start-dev": "nodemon server/index.js",
     "upload": "node s3_upload.js bedroost-booking-static ./booking/client/dist/main.js"
   },
   "repository": {
@@ -11,7 +12,7 @@
     "url": "git+https://github.com/bedroost/booking-proxy.git"
   },
   "keywords": [],
-  "author": "Esme",
+  "author": "Zach",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bedroost/booking-proxy/issues"
@@ -31,6 +32,7 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "morgan": "^1.9.1",
+    "newrelic": "^5.11.0",
     "nodemon": "^1.19.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"

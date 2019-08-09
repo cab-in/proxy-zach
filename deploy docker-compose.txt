@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  server:
+    image: zjthomas/reviews:proxy
+    ports:
+      - '80:3001'
